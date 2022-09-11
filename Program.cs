@@ -173,39 +173,13 @@ switch (TaskIndex)
                         num++;
                         if (i == numbers.GetLength(0)-1)
                         {
-                            num = 11;
-                            for (int a = 0; a < numbers.GetLength(1); a++)
+                            
+                            for (int a = 3; a < 0; a--)
                             {
                                 
-                                numbers[i,a] = num - 1;
-                                num--;
-                                if (a == numbers.GetLength(1)-1)
-                                {
-                                    num = 13;
-                                    for (int b = 1; b < numbers.GetLength(0); b++)
-                                    {
-                                        numbers[b,0] = num - 1;
-                                        num--;
-                                        if (b == numbers.GetLength(0)-1)
-                                        {
-                                            num = 12;
-                                            for (int c = 1; c < numbers.GetLength(1)-1; c++)
-                                            {
-                                                numbers[1,c] = num + 1;
-                                                num++;
-                                                if (c == numbers.GetLength(1)-2)
-                                                {
-                                                    num = 17;
-                                                    for (int D = 1; D < numbers.GetLength(1)-1; D++)
-                                                    {
-                                                        numbers[2,D] = num - 1;
-                                                        num--;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
+                                numbers[i,a] = num + 1;
+                                num++;
+                                
                             }
                         }
                     }
